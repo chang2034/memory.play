@@ -1,0 +1,29 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var numeros = 1...100
+
+var cadena : String = ""
+
+for numero in numeros {
+    
+    cadena = ""
+    
+    if numero % 5 == 0 {
+        cadena = cadena + " Bingo!!!"
+    }
+    
+    if numero % 2 == 0 {
+        cadena = cadena + "par !!!"
+    } else {
+        cadena = cadena + "impar!!!"
+    }
+    
+    if numero >= 30 && numero <= 40 {
+        cadena = cadena + "Viva Swift!!!"
+    }
+    
+    print("\(numero)\t\(cadena)")
+    
+}
